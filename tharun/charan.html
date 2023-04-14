@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{width:700px;padding:5px;border:5px solid black;margin-left:25%;
+        background-position:center;background-color:paleturquoise}
+        .solid{border-style:solid;border-width:3px;border-color:black}
+        #hhi{
+            background-repeat:no-repeat;
+            background-image:url(Capgemini.jpg);
+            background-repeat:no-repeat;
+            background-attachment:scroll;
+            background-size:350px 350px;
+            
+        }
+        #img{
+            width:700px;
+            height:200px;
+        }
+    h1{border-style:solid;padding-top:12px;border-color:black;color:brown;padding-right:100px;padding-left:85px}
+    </style>
+</head>
+<body>
+    <img id="img" src="Capgemini.jpg"/>
+           <h1>Employe Application Form</h1> <br/>
+    <form method="POST">
+        <fieldset >
+            <legend>Job Application Form</legend>
+            <table align="center">
+        <tr>
+         <tr>
+       <td>First Name:</td> 
+        <td><input type="text"name="username" required/></td>
+        </tr>   
+        <tr>
+        <td>Middle Name:</td>
+       <td><input type="name" name="name"/></td>
+    </tr>
+        <td>Last Name:</td>
+      <td><input type="name" name="name"/></td>
+      </tr> 
+       <tr>
+        <td>Birthdate:</td>
+        <td><input type="date" name="dd-mm-yyyy"></td>
+       </tr>
+       <tr>
+       <td>Phone number:</td>
+        <td><input type="number" number="number" required/> </td>
+        </tr>
+        <tr>
+            <td>Alternative Phone Number:</td>
+            <td><input type="number" name="number"/></td>
+        </tr>
+        <tr>
+        <td>Email Address:</td>
+        <td><input type="email" email="email" required/> </td>
+        </tr>
+        <tr>
+        <td>Gender:</td>
+        <td><input type="radio" name="Gender" value="Male"/>Male <br/>
+        <input type="radio" name="Gender" value="Female"/>Female <br/>
+    <input type="radio" name="Gender"  value="Other"/>Other </td>
+        </tr>
+        <tr>
+        <td>Which programming languages you know:</td>
+       <td><select name="dropdown">
+            <option value="C language">C language</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+        </select> </td>
+        <tr>
+            <td>Salary Requirements:</td>
+            <td><input type="number" name="number"/></td>
+        </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="description" name="description" required/></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><input type="description" name="decription"/></td>
+            </tr>
+            <tr>
+                <td>Pincode:</td>
+                <td><input type="number" name="number"/></td>
+            </tr>
+            <tr>
+                <td>District:</td>
+                <td><input type="description" name="description"/></td>
+            </tr>
+        <tr>
+        <td>Specilization:</td> 
+        <td><input type="checkbox" name="Computer Science" value="on"/>Computer Science <br/>
+        <input type="checkbox" name="Information Technology" value="on"/>Information Technology <br/> 
+        <input type="checkbox" name="Computer Architecture" value="on"/>Computer Architecture <br/> 
+        <input type="checkbox" name="Tele Communication" value="on"/>Tele Communication </td>    
+        </tr>
+        <tr>
+            <td>Last Company You Worked For:</td>
+            <td><input type="description" name="description"/></td>
+        </tr>
+        <tr>
+        <td>Upload your Resume:</td>
+       <td><input type="file" name="fileupload" accept="image/*" required/></td>
+       </tr>
+       <tr>
+        <td>Upload SSC marklist:</td>
+        <td><input type="file" name="fileupload" accept="image/*" required/></td>
+       </tr>
+       <tr>
+        <td>Special Qualifications:</td>
+       <td><textarea rows="10" cols="40">
+        </textarea> </td>
+        </tr>
+        <tr>
+     <td><center><button onclick="alert('submitted successfully')">Submit</button></center>
+        </td>
+        </fieldset>
+    </form>
+</body>
+</html>
